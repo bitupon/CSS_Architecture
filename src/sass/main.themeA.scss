@@ -1,0 +1,46 @@
+// File : main.themeA.scss (for a Theme 'ThemeA')
+// All "Base" specific SASS partials
+
+@import 'base/colors'; 
+@import 'base/colors.themeA'; //overriding with themeA color variables
+@import 'base/variables';
+@import 'base/variables.themeA'; //overriding with themeA other variables
+@import 'base/mixins';
+@import 'base/extends';
+@import 'base/functions';
+@import 'base/type';
+@import 'base/reset';
+@import 'base/icons';
+
+
+// All "Layout" specific SASS partials
+
+@import 'layout/header';
+@import 'layout/body';
+@import 'layout/section';
+@import 'layout/footer';
+
+// All "Module" specific SASS partials
+
+@import 'module/accordion';
+@import 'module/alert';
+@import 'module/carousal';
+@import 'module/modal';
+@import 'module/form';
+@import 'module/button';
+@import 'module/list';
+@import 'module/toggler';
+@import 'module/flyout';
+
+// All "Overrides" specific SASS partials
+
+@import 'overrides/kendo_grid';
+
+// All "Responsive" specific SASS partials
+
+@import "./responsive/responsive.mobile";
+@import "./responsive/responsive.tablet";
+
+
+@import "./base/utilities"; // Utilities needs to added towards
+                            // the end of the CSS ruleset because of more specificity
